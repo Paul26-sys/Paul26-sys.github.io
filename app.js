@@ -53,22 +53,22 @@ function efectoHabilidades(){
     if(distancia_skills>=100 && entro==false){
         entro = true;
         const intervalING = setInterval(function(){
-            pintarBarra(ING, 8, 0, intervalING);
+            pintarBarra(ING, 12, 0, intervalING);
         },100);
         const intervalAnalista = setInterval(function(){
-            pintarBarra(Analista, 15, 1, intervalAnalista);
+            pintarBarra(Analista, 19, 1, intervalAnalista);
         },100);
         const intervalCiencia = setInterval(function(){
-            pintarBarra(Ciencia, 17, 2, intervalCiencia);
+            pintarBarra(Ciencia, 20, 2, intervalCiencia);
         },100);
         const intervalAnalistaDatos = setInterval(function(){
-            pintarBarra(AnalistaDatos, 18, 3, intervalAnalistaDatos);
+            pintarBarra(AnalistaDatos, 16, 3, intervalAnalistaDatos);
         },100);
         const intervalInversionsita = setInterval(function(){
             pintarBarra(Inversionista, 16, 4, intervalInversionsita);
         },100);
         const intervalHtml = setInterval(function(){
-            pintarBarra(Html, 3, 5, intervalHtml);
+            pintarBarra(Html, 14, 5, intervalHtml);
         },100);
     }
 }
