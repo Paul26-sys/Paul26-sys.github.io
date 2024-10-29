@@ -34,7 +34,7 @@ let Analista = document.getElementById("Analista");
 crearBarra(Analista);
 let Ciencia = document.getElementById("Ciencia");
 crearBarra(Ciencia);
-let Ciberseguridad = document.getElementById("AnalistaDatos");
+let AnalistaDatos = document.getElementById("AnalistaDatos");
 crearBarra(AnalistaDatos);
 let Inversionista = document.getElementById("Inversionista");
 crearBarra(Inversionista);
