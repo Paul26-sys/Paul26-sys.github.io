@@ -34,14 +34,14 @@ let Analista = document.getElementById("Analista");
 crearBarra(Analista);
 let Ciencia = document.getElementById("Ciencia");
 crearBarra(Ciencia);
-let AnalistaDeDatos = document.getElementById("AnalistaDeDatos");
-crearBarra(AnalistaDeDatos);
+let Ciberseguridad = document.getElementById("Ciberseguridad");
+crearBarra(Ciberseguridad);
 let Inversionista = document.getElementById("Inversionista");
 crearBarra(Inversionista);
 let Html = document.getElementById("Html");
 crearBarra(Html);
 //Ahora voy a guardar la cantidad de barritas que se van a ir pintando por cada barar
-//para eso utilizo un arreglo, cada posición pertenece a un elemento
+//para eso utilizo un arreglo, cada posiciòn pertenece a un elemento
 //comienzan en -1 porque no tiene ninguna pintada al iniciarse
 let contadores = [-1,-1,-1,-1,-1,-1];
 //esta variable la voy a utilizar de bandera para saber si ya ejecuto la animación
@@ -59,16 +59,16 @@ function efectoHabilidades(){
             pintarBarra(Analista, 15, 1, intervalAnalista);
         },100);
         const intervalCiencia = setInterval(function(){
-            pintarBarra(Ciencia, 20, 2, intervalCiencia);
+            pintarBarra(Ciencia, 17, 2, intervalCiencia);
         },100);
-        const intervalAnalistaDeDatos = setInterval(function(){
-            pintarBarra(AnalistaDeDatos, 17, 3, intervalAnalistaDeDatos);
+        const intervalCiberseguridad = setInterval(function(){
+            pintarBarra(Ciberseguridad, 6, 3, intervalCiberseguridad);
         },100);
         const intervalInversionsita = setInterval(function(){
             pintarBarra(Inversionista, 16, 4, intervalInversionsita);
         },100);
         const intervalHtml = setInterval(function(){
-            pintarBarra(Html, 14, 5, intervalHtml);
+            pintarBarra(Html, 3, 5, intervalHtml);
         },100);
     }
 }
@@ -87,4 +87,3 @@ function pintarBarra(id_barra, cantidad, indice, interval){
 window.onscroll = function(){
     efectoHabilidades();
 }
-
