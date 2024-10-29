@@ -34,8 +34,8 @@ let Analista = document.getElementById("Analista");
 crearBarra(Analista);
 let Ciencia = document.getElementById("Ciencia");
 crearBarra(Ciencia);
-let Ciberseguridad = document.getElementById("Ciberseguridad");
-crearBarra(Ciberseguridad);
+let Ciberseguridad = document.getElementById("AnalistaDatos");
+crearBarra(AnalistaDatos);
 let Inversionista = document.getElementById("Inversionista");
 crearBarra(Inversionista);
 let Html = document.getElementById("Html");
@@ -61,8 +61,8 @@ function efectoHabilidades(){
         const intervalCiencia = setInterval(function(){
             pintarBarra(Ciencia, 17, 2, intervalCiencia);
         },100);
-        const intervalCiberseguridad = setInterval(function(){
-            pintarBarra(Ciberseguridad, 6, 3, intervalCiberseguridad);
+        const intervalAnalistaDatos = setInterval(function(){
+            pintarBarra(AnalistaDatos, 18, 3, intervalAnalistaDatos);
         },100);
         const intervalInversionsita = setInterval(function(){
             pintarBarra(Inversionista, 16, 4, intervalInversionsita);
